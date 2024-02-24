@@ -1,0 +1,160 @@
+.project-image {
+  height: 200px;
+  max-height: 133px;
+  margin: auto 0;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.project-image > .project-inner-image {
+  width: 300px;
+  height: 850px;
+  background: url(file:///home/oscar/Documents/vert.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-image > #frasesdragonball {
+  background-image: url(../images/screems/frasesdragonball.png);
+}
+
+.project-image > #orangetravelassist {
+  background-image: url(../images/screems/orangetravelassist.png);
+}
+.project-image > #roanja {
+  background-image: url(../images/screems/roanja.png);
+}
+.project-image > #treitus {
+  background-image: url(../images/screems/treitus.png);
+}
+.project-image > #blac {
+  background-image: url(../images/screems/blac.png);
+}
+.project-image > #linkup {
+  background-image: url(../images/screems/linkup.png);
+}
+.project-image > #apreciodepana {
+  background-image: url(../images/screems/apreciodepana.png);
+}
+.project-image > #urbaner {
+  background-image: url(../images/screems/urbaner.png);
+}
+
+.project-image > #genderlab {
+  background-image: url(../images/screems/genderlab.png);
+}
+
+
+.shadow-large:hover .project-inner-image {
+  animation: moveSlideshow 50s linear infinite;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateY(-66.6666%);  
+  }
+}
+/*TEXT STYLE*/
+.project.shadow-large {
+    padding: 65px 0px 60px 10px;
+}
+.project-info p {
+    text-align: justify;
+}
+/*Scroll Image*/
+#scroll {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    text-indent: -9999px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+#scroll span {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+    transform: rotate(270deg);
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0 1em;
+  clear: left;
+}
+
+.box-content{
+  display: block;
+  width: auto;
+  height: auto;
+}
+.border-sections {
+  border: 2px solid #000; 
+  border-radius: 10px;
+  padding: 20px; 
+  margin-bottom: 20px; 
+}
+.imagen-explicativa{
+  width: 580px;
+  float: left;
+  margin: 0 20px 20px 20px;
+}
+
+.numero-secreto-contenido{
+  display:inline-block;
+}
+
+.boton {
+  background: orange;
+  color: #ffffff;
+  padding: 5px 40px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 5px;
+}
+
+.boton:hover {
+  background: #3498db;
+  transform: scale(1.1);
+}
+
+.boton:hover a {
+  background: #3498db; 
+  color: #ffffff;
+}
+
+.boton a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.volver-home a{
+  text-decoration: none;
+}
