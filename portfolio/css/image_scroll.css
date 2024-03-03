@@ -116,7 +116,7 @@
 .imagen-explicativa{
   width: 580px;
   float: left;
-  margin: 0 auto;
+  margin: 0 1em auto;
   max-width: 100%;
   height: auto;
 }
