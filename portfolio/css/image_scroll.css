@@ -94,6 +94,7 @@
     -ms-filter:"alpha(opacity=100)";
 }
 
+/* INICIO CSS PERSONALIZDO*/
 .container {
   width: 80%;
   max-width: 1200px;
@@ -108,14 +109,14 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido */
+  z-index: 1000; 
 }
 
 header h1 {
   margin: 0;
   font-size: 24px;
-  display: inline-block; /* Permite centrar verticalmente con el icono */
-  vertical-align: middle; /* Centra verticalmente con el icono */
+  display: inline-block; 
+  vertical-align: middle; 
 }
 
 header nav ul {
@@ -139,7 +140,7 @@ header nav ul li a {
 
 header nav ul li a .bi {
   margin-right: 5px;
-  font-size: 1.5rem; /* Ajusta el tamaño del icono */
+  font-size: 1.5rem; 
 }
 
 .titulo-principal{
@@ -225,8 +226,8 @@ header nav ul li a .bi {
   width: 100%;
   text-align: center; 
   margin-bottom: 10px; 
-  max-width: 300px; /* Establece un ancho máximo para los botones */
-  margin-left: auto; /* Centra los botones en pantallas grandes y medianas */
+  max-width: 300px; 
+  margin-left: auto; 
   margin-right: auto;
 }
 
@@ -241,6 +242,12 @@ footer {
   header {
     display: block; 
   }
+  .container {
+    width: 100%; 
+    max-width: none; 
+    margin: 0; 
+    padding: 0; 
+}
   .border-sections {
     margin-left: 20px;
     margin-right: 20px;
