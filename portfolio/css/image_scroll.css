@@ -145,9 +145,19 @@ header nav ul li a .bi {
 
 .titulo-principal{
   text-align: center;
-  font-size: 2em;
   margin: 1em 0 1em;
   clear: left;
+  font-weight: bold;
+}
+
+.project-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+h3{
+  font-weight: bold;
 }
 
 .box-content{
