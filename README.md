@@ -1,4 +1,4 @@
-# Curriculum web Developer
+# Curriculum web - Developer
 
 # Descripción del Proyecto
 
