@@ -175,6 +175,7 @@
             justify-content: center;
             opacity: 0;
             transition: opacity 0.3s ease;
+            pointer-events: none;
         }
         
         .project-card:hover .project-overlay {
