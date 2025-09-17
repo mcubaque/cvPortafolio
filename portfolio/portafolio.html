@@ -8,7 +8,7 @@
     <title>Mi Portafolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,250 +17,269 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body> 
+<style>
+header {
+    background: rgba(255, 255, 255, 0.95);
+}
+</style>
 
+<body> 
     <header>
-        <div class="container">
-            <h1>Portafolio de Marco Cubaque</h1>
+        <div class="header-container">
+            <a href="#" class="logo">Marco Cubaque</a>
             <nav>
-                <ul>
-                    <li><a href="https://mcubaque.github.io/cvPortafolio/" class=""><i class="bi bi-house-door-fill"></i></a></li>
-                </ul>
+                <a href="https://mcubaque.github.io/cvPortafolio/" class="nav-home">
+                    <i class="bi bi-house-door-fill"></i>
+                </a>
             </nav>
         </div>
     </header>
 
-    <main class="container"> 
-    
-        <h1 class="titulo-principal" >Proyectos Académicos</h1>
-    <section class="border-sections">
-        <div class="box-content">
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Proyectos Académicos</h1>
+            <p class="hero-subtitle">Desarrollador & Administrador de Bases de Datos</p>
+            <p class="hero-description">
+                Explora mi colección de proyectos que demuestran mis habilidades en desarrollo web, 
+                administración de bases de datos y soluciones tecnológicas innovadoras.
+            </p>
+        </div>
+    </section>
 
-            <h1 class="project-title">Guía SQL</h1>
-            
-            <div class="imagen-explicativa">
-                <div class="video">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/k_W6vyeT7Vw?si=T9ssEqlbzALCh51x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <main class="main-container">
+        <section class="projects-section">
+            <div class="projects-grid">
+                
+                <!-- SQL Monitoring - Full Width -->
+                <div class="project-card featured-project">
+                    <div class="project-image featured-image">
+                        <iframe src="https://youtu.be/z_xwuE8E_9Y" 
+                                title="Herramienta de monitoreo de SQL Server" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        <div class="project-overlay">
+                            <div class="play-button">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content featured-content">
+                        <h2 class="featured-title">Herramienta de monitoreo de SQL Server</h2>
+                        <p class="project-description">
+                            Una herramienta práctica y ligera para el monitoreo de SQL Server, enfocada en la visibilidad y 
+                            diagnóstico en tiempo real del rendimiento de la base de datos. Permite identificar consultas 
+                            costosas, analizar tiempos de espera y métricas de actividad, facilitando la optimización 
+                            proactiva y la toma de decisiones informadas.
+                        </p>
+                        
+                        <ul class="project-features">
+                            <li>Dashboard en tiempo real con métricas de CPU, memoria, disco y estado de conexiones</li>
+                            <li>Análisis de consultas lentas, estadísticas de espera (CPU, I/O, Locks, Memory) y fragmentación de índices</li>
+                            <li>Monitoreo detallado de sesiones activas, bloqueos y deadlocks, con historial de conexiones</li>
+                            <li>Seguimiento de seguridad: intentos de inicio de sesión fallidos, auditoría de permisos y cambios de esquema (DDL)</li>
+                            <li>Supervisión de operaciones de mantenimiento: backups, trabajos de SQL Agent, espacio en archivos y chequeos de integridad</li>
+                            <li>Visualización interactiva con gráficas dinámicas, autenticación con JWT y soporte multiusuario</li>
+                            <li>Arquitectura basada en FastAPI, Redis y Nginx con contenedores Docker para despliegue sencillo y escalable</li>
+                        </ul>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">SQLServer</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">JWT Auth</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Nginx</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/mcubaque/sql-monitoring" target="_blank" class="btn-primary">
+                                <i class="bi bi-github"></i>
+                                Ver Repositorio
+                            </a>
+                            <a href="#" class="btn-secondary">
+                                <i class="bi bi-eye"></i>
+                                Demo Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guia SQL - Full Width -->
+                <div class="project-card featured-project">
+                    <div class="project-image featured-image">
+                        <iframe src="https://www.youtube.com/embed/k_W6vyeT7Vw?si=T9ssEqlbzALCh51x" 
+                                title="Guía SQL - Descripción del proyecto" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen></iframe>
+                        <div class="project-overlay">
+                            <div class="play-button">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content featured-content">
+                        <h2 class="featured-title">Guía Completa de SQL</h2>
+                        <p class="project-description">
+                            Una completa y detallada colección de recursos diseñada para dominar SQL. 
+                            Desde fundamentos básicos hasta técnicas avanzadas, con enfoque práctico 
+                            y ejemplos reales de administración de bases de datos.
+                        </p>
+                        
+                        <ul class="project-features">
+                            <li>Fundamentos y conceptos básicos de SQL</li>
+                            <li>Manipulación avanzada de datos (SELECT, INSERT, UPDATE, DELETE)</li>
+                            <li>Diseño y administración de bases de datos</li>
+                            <li>JOINs, subconsultas y expresiones de tabla común (CTE)</li>
+                            <li>Seguridad, usuarios, roles y permisos</li>
+                            <li>Estrategias de backup y recuperación</li>
+                        </ul>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/mcubaque/MiCursoSQL" target="_blank" class="btn-primary">
+                                <i class="bi bi-github"></i>
+                                Ver Repositorio
+                            </a>
+                            <a href="#" class="btn-secondary">
+                                <i class="bi bi-eye"></i>
+                                Demo Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regular Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="play-button">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MergePDFs</h3>
+                        <p class="project-description">
+                            MergePDFs es una pequeña aplicación desarrollada en Python utilizando Flask y JavaScript, que permite a los 
+                            usuarios combinar múltiples archivos PDF en uno solo de forma rápida y sencilla.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">PyPDF2</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/mcubaque/mergePDFs" target="_blank" class="btn-primary">
+                                <i class="bi bi-github"></i>
+                                Repositorio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regular Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="play-button">
+                                <i class="bi bi-database"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Cluster Postgres - Patroni</h3>
+                        <p class="project-description">
+                            ClusterPatroni” es un proyecto orientado a gestionar y orquestar un clúster de PostgreSQL 
+                            con alta disponibilidad mediante Patroni. La idea es simplificar la instalación, puesta en 
+                            marcha y mantenimiento de un clúster que soporte failover automático, consistencia, 
+                            tolerancia a fallos y recuperación automática.
+                        </p>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Patroni</span>
+                            <span class="tech-tag">ETCD</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">HAProxy</span>
+                        </div>
+                        
+                        <div class="project-actions">
+                            <a href="https://github.com/mcubaque/ClusterPatroni" target="_blank" class="btn-primary">
+                                <i class="bi bi-github"></i>
+                                Repositorio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <h2 class="skills-title">Mis Especialidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Desarrollo Backend</h3>
+                    <ul>
+                        <li>Python (Flask, Django)</li>
+                        <li>Fast API</li>
+                        <li>API REST Development</li>
+                        <li>Microservicios</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Administración de BD</h3>
+                    <ul>
+                        <li>MySQL | PostgreSQL</li>
+                        <li>SQL Server | Oracle</li>
+                        <li>Tuning | Performance</li>
+                        <li>Backup & Recovery</li>
+                        <li>Monitoreo</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Desarrollo Frontend</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React & Vue.js</li>
+                        <li>Bootstrap & Tailwind</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <ul>
+                        <li>Docker & Containerización</li>
+                        <li>AWS & Azure</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Monitoreo & Logs</li>
+                    </ul>
                 </div>
             </div>
-            <h3>Descripción del Proyecto: Guía SQL"</h3>
-            <p>
-                Guía de consulta de recursos teoricos del Lenguaje de consulta estructurado SQL
-            </p>
-            <h3>Objetivo del Proyecto:</h3>
-            <p>
-                <p>¡Bienvenido a la Guía de SQL! Este proyecto es una completa y detallada colección de recursos diseñada para ayudarte a dominar el Lenguaje de Consulta Estructurada (SQL). Desde los fundamentos básicos hasta técnicas avanzadas, esta guía te proporciona un enfoque paso a paso para aprender y entender SQL de manera efectiva.</p>
-                <ul>
-                <li>Introducción a SQL: Explora la historia, el propósito y los conceptos básicos de SQL.
-                </li>                
-                <li>Manipulación de Datos: Aprende a realizar consultas SELECT, INSERT, UPDATE y DELETE.
-                </li>
-                <li>Diseño y Administración de Bases de Datos: Dominio de la creación de bases de datos, tablas, claves primarias, claves foráneas y restricciones de integridad.
-                </li>
-                <li>Consultas Avanzadas: Utiliza JOINs, subconsultas y expresiones de tabla común (CTE) para consultas complejas.
-                </li>
-                <li>Seguridad y Control de Acceso: Gestiona usuarios, roles, permisos y políticas de seguridad en bases de datos SQL.
-                </li>
-                <li>Migración, Copias de Seguridad y Recuperación de Datos: Estrategias para migrar datos, realizar copias de seguridad y recuperar datos en caso de fallos.
-                </li>
-                </ul>
-            </p>
-            <h3>Tecnologías Utilizadas:</h3>
-            <p> 
-                <ul>
-                    <li>HTML5</li> 
-                    <li>CSS3</li> 
-                    <li>Bootstrap</li> 
-                    <li>Python</li> 
-                    <li>Flask</li> 
-                    <li>MySQL</li> 
-                </ul>
-            </p>
-        </div>
-        <div class="botones-container">
-            <div>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://github.com/mcubaque/MiCursoSQL">Visitar Repositorio</a>
-                </button>
-            </div>
-        </div>
-        
-    </section>
+        </section>
+    </main>
 
-    <section class="border-sections">
-        <div class="box-content">
-
-            <h1 class="project-title">MergePDFs</h1>
-            
-            <div class="imagen-explicativa">
-                <div class="video">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/2YCvUpG7Xgc?si=zmYz0fJ8idudQy8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-            <h3>Descripción del Proyecto: MergePDFs"</h3>
-            <p>
-                MergePDFs es una aplicación desarrollada para facilitar la fusión de múltiples archivos PDF en uno solo. Con tecnologías como Python, Flask, HTML y JavaScript, esta herramienta permite a los usuarios combinar de manera rápida y sencilla varios documentos PDF en uno solo, ahorrando tiempo y simplificando el proceso. 
-            </p>
-            <h3>Objetivo del Proyecto:</h3>
-            <p>
-                <p>El propósito principal de MergePDFs es proporcionar a los usuarios una forma eficiente de combinar varios archivos PDF en uno solo. Algunas de las funcionalidades clave incluyen:</p>
-                <ul>
-                <li>Fusión de PDFs: Los usuarios pueden cargar varios archivos PDF y combinarlos en un solo documento con solo unos pocos clics.</li>
-                
-                <li>Interfaz Intuitiva: La aplicación cuenta con una interfaz fácil de usar que permite a los usuarios cargar, organizar y fusionar archivos PDF de manera rápida y sin complicaciones.</li>
-                
-                <li>Descarga del PDF Fusionado: Una vez completada la fusión, los usuarios tienen la opción de descargar el PDF fusionado directamente desde la aplicación.</li>
-                </ul>
-            </p>
-            <h3>Tecnologías Utilizadas:</h3>
-            <p> 
-                <ul>
-                    <li>HTML5</li> 
-                    <li>Javascript</li> 
-                    <li>Python</li> 
-                    <li>Flask</li> 
-                </ul>
-            </p>
+    <footer>
+        <div class="container">
+            <p>© 2025 Marco Cubaque - Software Engineer</p>
         </div>
-        <div class="botones-container">
-            <div>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://github.com/mcubaque/mergePDFs">Visitar Repositorio</a>
-                </button>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="border-sections">
-        <div class="box-content">
-
-            <h1 class="project-title">SkyMonitor</h1>
-            
-            <img class="imagen-explicativa" src="images/screems/Radar.png" alt="">
-            <h3>Descripción del Proyecto: SkyMonitor"</h3>
-            <p>
-                La aplicación SkyMonitor es una herramienta diseñada para obtener y visualizar información en tiempo real sobre el tráfico aéreo en una zona geográfica específica. Utilizando tecnologías como Python, Flask, HTML, JavaScript, MySQL y la API de OpenSky 
-            </p>
-            <h3>Objetivo del Proyecto:</h3>
-            <p>
-                <h4>Esta aplicación permite a los usuarios:</h4>
-                <ul>
-                <li>Visualizar el Tráfico Aéreo en Tiempo Real: La aplicación muestra en un mapa interactivo la ubicación y detalles de los vuelos en una región determinada. Los usuarios pueden observar la posición, altitud, velocidad y otros datos relevantes de las aeronaves que se encuentran en vuelo.</li>
-                
-                <li>Almacenar Datos en una Base de Datos: Además de mostrar los vuelos en tiempo real, la aplicación también captura y almacena la información de los vuelos en una base de datos MySQL. Esto permite un registro histórico de los movimientos de las aeronaves, lo que puede ser útil para análisis posteriores o para uso en aplicaciones relacionadas.</li>
-                
-                <li>Actualización Automática de Datos: La aplicación se conecta a la API de OpenSky para obtener información actualizada sobre el tráfico aéreo en la zona seleccionada. Esta información se actualiza automáticamente a intervalos regulares, lo que garantiza que los datos mostrados sean siempre precisos y actualizados.</li>
-                </ul>
-            </p>
-            <h3>Tecnologías Utilizadas:</h3>
-            <p> 
-                <ul>
-                    <li>HTML5</li> 
-                    <li>Javascript</li> 
-                    <li>Python</li> 
-                    <li>Flask</li> 
-                    <li>OpenSky API</li> 
-                    <li>MySQL</li>
-                </ul>
-            </p>
-        </div>
-        <div class="botones-container">
-            <div>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://github.com/mcubaque/radar">Visitar Repositorio</a>
-                </button>
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="border-sections">
-        <div class="box-content">
-
-            <h1 class="project-title">Número Secreto</h1>
-            
-            <img class="imagen-explicativa" src="images/screems/numero-secreto.png" alt="Numero-Secreto">
-            <h3>Descripción del Proyecto: Juego "Número Secreto"</h3>
-            <p>
-                El juego "Número Secreto" es un proyecto desarrollado como parte del programa Oracle Next Education (ONE) en colaboración con Alura LATAM. 
-            </p>
-            <h3>Objetivo del Proyecto:</h3>
-            <p>
-                El objetivo principal del juego "Número Secreto" es proporcionar a los usuarios una experiencia de juego entretenida mientras practican su capacidad para adivinar un número aleatorio generado por el sistema.
-                Por otro lado, el objetivo del proyecto va más allá de la experiencia de juego en sí. Busca fortalecer las habilidades en lógica de programación al desafiar a los jugadores a utilizar su razonamiento y deducción para encontrar el número oculto. Además, al implementarse como una aplicación web, el proyecto también tiene como objetivo permitir que los usuarios se familiaricen y mejoren sus habilidades en tecnologías web.
-            </p>
-            <h3>Tecnologías Utilizadas:</h3>
-            <p> 
-                <ul>
-                    <li>HTML5</li> 
-                    <li>CSS3</li> 
-                    <li>Javascript</li>
-                </ul>
-            </p>
-        </div>
-        <div class="botones-container">
-            <div>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://mcubaque.github.io/numeroSecreto/">Ver Online</a>
-                </button>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://github.com/mcubaque/numeroSecreto">Visitar Repositorio</a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="border-sections">
-        <div class="box-content">
-
-            <h1 class="project-title">Barbería Alura</h1>
-            
-            <img class="imagen-explicativa" src="images/screems/alurabarb.png" alt="">
-            <h3>Descripción del Proyecto: "Sitio Web de la Barbería Alura"</h3>
-            <p>
-                El sitio web de la Barbería Alura es un proyecto desarrollado como parte del programa Oracle Next Education (ONE) en colaboración con Alura LATAM.
-            </p>
-            <h3>Objetivo del Proyecto:</h3>
-            <p>
-                La Barbería "Alura" es un proyecto académico desarrollado como parte de mi formación en desarrollo web. Esta aplicación web ofrece una experiencia virtual para una barbería ficticia, donde los usuarios pueden explorar los:
-                <ul>
-                    <li>Servicios ofrecidos</li> 
-                    <li>Conocer al personal</li> 
-                    <li>Reservar citas</li> 
-                    <li>Obtener información sobre ubicación y horarios de atención</li> 
-                </ul>
-            </p>
-            <h3>Tecnologías Utilizadas:</h3>
-            <p> 
-                <ul>
-                    <li>HTML5</li> 
-                    <li>CSS3</li> 
-                    <li>Javascript</li> 
-                    <li>jQuerty</li>
-                </ul>
-            </p>
-        </div>
-        <div class="botones-container">
-            <div>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://mcubaque.github.io/barberiaAlura/">Ver Online</a>
-                </button>
-                <button class="boton">
-                    <a class="boton" target="_blank" href="https://github.com/mcubaque/barberiaAlura">Visitar Repositorio</a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-</main>
-
+    </footer>
 </body>
-
-<footer>
-    <div class="container">
-        <p>Derechos de autor © 2024 - Marco Cubaque</p>
-    </div>
-</footer>
 
 </html>
