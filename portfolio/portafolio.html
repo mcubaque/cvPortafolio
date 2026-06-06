@@ -1,282 +1,475 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Portafolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Portafolio de proyectos - Marco Cubaque | Software Engineer & DBA">
+    <title>Portafolio - Marco Cubaque</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/image_scroll.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<style>
-header {
-    background: rgba(255, 255, 255, 0.95);
-}
-</style>
+<body>
 
-<body> 
+    <!-- ======================== HEADER ======================== -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo">Marco Cubaque</a>
+            <a href="https://mcubaque.github.io/cvPortafolio/" class="logo">Marco <span>Cubaque</span></a>
             <nav>
-                <a href="https://mcubaque.github.io/cvPortafolio/" class="nav-home">
-                    <i class="bi bi-house-door-fill"></i>
+                <a href="https://mcubaque.github.io/cvPortafolio/" class="nav-back">
+                    <i class="bi bi-arrow-left"></i> Volver al CV
                 </a>
             </nav>
         </div>
     </header>
 
+    <!-- ======================== HERO ======================== -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Proyectos Académicos</h1>
-            <p class="hero-subtitle">Desarrollador & Administrador de Bases de Datos</p>
+            <span class="hero-eyebrow">Software Engineer · Database Administrator</span>
+            <h1>Portafolio de<br><span class="gradient-text">Proyectos</span></h1>
             <p class="hero-description">
-                Explora mi colección de proyectos que demuestran mis habilidades en desarrollo web, 
-                administración de bases de datos y soluciones tecnológicas innovadoras.
+                Proyectos que reflejan mi experiencia en administración de bases de datos,
+                desarrollo backend y soluciones de infraestructura tecnológica.
             </p>
         </div>
     </section>
 
+    <!-- ======================== MAIN ======================== -->
     <main class="main-container">
-        <section class="projects-section">
-            <div class="projects-grid">
-                
-                <!-- SQL Monitoring - Full Width -->
-                <div class="project-card featured-project">
-                    <div class="project-image featured-image">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/z_xwuE8E_9Y?si=2wulm7W65UneaoYh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <div class="project-overlay">
-                            <div class="play-button">
-                                <i class="bi bi-play-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content featured-content">
-                        <h2 class="featured-title">Herramienta de monitoreo de SQL Server</h2>
-                        <p class="project-description">
-                            Una herramienta práctica y ligera para el monitoreo de SQL Server, enfocada en la visibilidad y 
-                            diagnóstico en tiempo real del rendimiento de la base de datos. Permite identificar consultas 
-                            costosas, analizar tiempos de espera y métricas de actividad, facilitando la optimización 
-                            proactiva y la toma de decisiones informadas.
-                        </p>
-                        
-                        <ul class="project-features">
-                            <li>Dashboard en tiempo real con métricas de CPU, memoria, disco y estado de conexiones</li>
-                            <li>Análisis de consultas lentas, estadísticas de espera (CPU, I/O, Locks, Memory) y fragmentación de índices</li>
-                            <li>Monitoreo detallado de sesiones activas, bloqueos y deadlocks, con historial de conexiones</li>
-                            <li>Seguimiento de seguridad: intentos de inicio de sesión fallidos, auditoría de permisos y cambios de esquema (DDL)</li>
-                            <li>Supervisión de operaciones de mantenimiento: backups, trabajos de SQL Agent, espacio en archivos y chequeos de integridad</li>
-                            <li>Visualización interactiva con gráficas dinámicas, autenticación con JWT y soporte multiusuario</li>
-                            <li>Arquitectura basada en FastAPI, Redis y Nginx con contenedores Docker para despliegue sencillo y escalable</li>
-                        </ul>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-tag">SQLServer</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">JWT Auth</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">Nginx</span>
-                        </div>
-                        
-                        <div class="project-actions">
-                            <a href="https://github.com/mcubaque/sql-monitoring" target="_blank" class="btn-primary">
-                                <i class="bi bi-github"></i>
-                                Ver Repositorio
-                            </a>
-                            <a href="#" class="btn-secondary">
-                                <i class="bi bi-eye"></i>
-                                Demo Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Guia SQL - Full Width -->
-                <div class="project-card featured-project">
-                    <div class="project-image featured-image">
-                        <iframe src="https://www.youtube.com/embed/k_W6vyeT7Vw?si=T9ssEqlbzALCh51x" 
-                                title="Guía SQL - Descripción del proyecto" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen></iframe>
-                        <div class="project-overlay">
-                            <div class="play-button">
-                                <i class="bi bi-play-fill"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content featured-content">
-                        <h2 class="featured-title">Guía Completa de SQL</h2>
-                        <p class="project-description">
-                            Una completa y detallada colección de recursos diseñada para dominar SQL. 
-                            Desde fundamentos básicos hasta técnicas avanzadas, con enfoque práctico 
-                            y ejemplos reales de administración de bases de datos.
-                        </p>
-                        
-                        <ul class="project-features">
-                            <li>Fundamentos y conceptos básicos de SQL</li>
-                            <li>Manipulación avanzada de datos (SELECT, INSERT, UPDATE, DELETE)</li>
-                            <li>Diseño y administración de bases de datos</li>
-                            <li>JOINs, subconsultas y expresiones de tabla común (CTE)</li>
-                            <li>Seguridad, usuarios, roles y permisos</li>
-                            <li>Estrategias de backup y recuperación</li>
-                        </ul>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">HTML5</span>
-                            <span class="tech-tag">CSS3</span>
-                            <span class="tech-tag">Bootstrap</span>
-                        </div>
-                        
-                        <div class="project-actions">
-                            <a href="https://github.com/mcubaque/MiCursoSQL" target="_blank" class="btn-primary">
-                                <i class="bi bi-github"></i>
-                                Ver Repositorio
-                            </a>
-                            <a href="#" class="btn-secondary">
-                                <i class="bi bi-eye"></i>
-                                Demo Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Regular Project Card 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="play-button">
-                                <i class="bi bi-code-slash"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">MergePDFs</h3>
-                        <p class="project-description">
-                            MergePDFs es una pequeña aplicación desarrollada en Python utilizando Flask y JavaScript, que permite a los 
-                            usuarios combinar múltiples archivos PDF en uno solo de forma rápida y sencilla.
-                        </p>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">Javascript</span>
-                            <span class="tech-tag">PyPDF2</span>
-                        </div>
-                        
-                        <div class="project-actions">
-                            <a href="https://github.com/mcubaque/mergePDFs" target="_blank" class="btn-primary">
-                                <i class="bi bi-github"></i>
-                                Repositorio
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Regular Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <div class="play-button">
-                                <i class="bi bi-database"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Cluster Postgres - Patroni</h3>
-                        <p class="project-description">
-                            ClusterPatroni” es un proyecto orientado a gestionar y orquestar un clúster de PostgreSQL 
-                            con alta disponibilidad mediante Patroni. La idea es simplificar la instalación, puesta en 
-                            marcha y mantenimiento de un clúster que soporte failover automático, consistencia, 
-                            tolerancia a fallos y recuperación automática.
-                        </p>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Patroni</span>
-                            <span class="tech-tag">ETCD</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">HAProxy</span>
-                        </div>
-                        
-                        <div class="project-actions">
-                            <a href="https://github.com/mcubaque/ClusterPatroni" target="_blank" class="btn-primary">
-                                <i class="bi bi-github"></i>
-                                Repositorio
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+        <!-- FEATURED PROJECTS header -->
+        <div class="section-header">
+            <span class="section-label">Proyectos Destacados</span>
+            <h2 class="section-title-lg">Lo que he construido</h2>
+        </div>
 
-        <!-- Skills Section -->
-        <section class="skills-section">
-            <h2 class="skills-title">Mis Especialidades</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Desarrollo Backend</h3>
-                    <ul>
-                        <li>Python (Flask, Django)</li>
-                        <li>Fast API</li>
-                        <li>API REST Development</li>
-                        <li>Microservicios</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Administración de BD</h3>
-                    <ul>
-                        <li>MySQL | PostgreSQL</li>
-                        <li>SQL Server | Oracle</li>
-                        <li>Tuning | Performance</li>
-                        <li>Backup & Recovery</li>
-                        <li>Monitoreo</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Desarrollo Frontend</h3>
-                    <ul>
-                        <li>HTML5, CSS3, JavaScript</li>
-                        <li>React & Vue.js</li>
-                        <li>Bootstrap & Tailwind</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>DevOps & Cloud</h3>
-                    <ul>
-                        <li>Docker & Containerización</li>
-                        <li>AWS & Azure</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Monitoreo & Logs</li>
-                    </ul>
+        <!-- ---- GestionRH ---- -->
+        <div class="featured-project">
+            <div class="featured-media app-visual">
+                <div class="rh-preview">
+                    <div class="rh-topbar">
+                        <span class="rh-title"><i class="bi bi-briefcase"></i> Vacante: Backend Developer</span>
+                        <span class="rh-badge-open">Abierta</span>
+                    </div>
+                    <div class="rh-pipeline-labels">
+                        <span>Candidatos activos</span>
+                        <span class="rh-count">8 postulaciones</span>
+                    </div>
+                    <div class="rh-candidates">
+                        <div class="rh-candidate">
+                            <div class="rh-avatar" style="background:#1d4ed8;">AG</div>
+                            <div class="rh-info">
+                                <div class="rh-name">Ana García</div>
+                                <div class="rh-stage">Entrevista HR</div>
+                            </div>
+                            <div class="rh-score high">91%</div>
+                        </div>
+                        <div class="rh-candidate">
+                            <div class="rh-avatar" style="background:#0891b2;">LT</div>
+                            <div class="rh-info">
+                                <div class="rh-name">Laura Torres</div>
+                                <div class="rh-stage">Prueba Técnica</div>
+                            </div>
+                            <div class="rh-score high">88%</div>
+                        </div>
+                        <div class="rh-candidate">
+                            <div class="rh-avatar" style="background:#7c3aed;">CM</div>
+                            <div class="rh-info">
+                                <div class="rh-name">Carlos Mendez</div>
+                                <div class="rh-stage">Revisión CV</div>
+                            </div>
+                            <div class="rh-score med">74%</div>
+                        </div>
+                        <div class="rh-candidate">
+                            <div class="rh-avatar" style="background:#059669;">SR</div>
+                            <div class="rh-info">
+                                <div class="rh-name">Sara Ramos</div>
+                                <div class="rh-stage">Oferta enviada</div>
+                            </div>
+                            <div class="rh-score high">95%</div>
+                        </div>
+                    </div>
+                    <div class="rh-footer">
+                        <div class="rh-stat"><span class="rh-num">4</span>Activos</div>
+                        <div class="rh-stat"><span class="rh-num">1</span>En oferta</div>
+                        <div class="rh-stat"><span class="rh-num">2</span>Contratados</div>
+                        <div class="rh-stat"><span class="rh-num">1</span>Descartado</div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="featured-content">
+                <span class="project-number">01 — Destacado</span>
+                <h3 class="featured-title">GestionRH — Sistema de Reclutamiento y Evaluación</h3>
+                <p class="project-description">
+                    Plataforma web integral para la gestión del ciclo completo de contratación en AGS Americas:
+                    desde la publicación de vacantes hasta el seguimiento del desempeño, con inteligencia
+                    artificial integrada para análisis de candidatos.
+                </p>
+                <ul class="project-features">
+                    <li>Portal público para candidatos con registro y aplicación autónoma</li>
+                    <li>Pipeline de selección en 7 etapas con citaciones automáticas por email</li>
+                    <li>Score de compatibilidad 0–100% calculado con algoritmo de matching + IA</li>
+                    <li>Parser de CVs en PDF con OpenAI/Groq para extracción automática de datos</li>
+                    <li>Evaluaciones de desempeño (TH-F027) con radar por dimensiones y análisis PMI</li>
+                    <li>Reportes ejecutivos en Excel y PDF: embudo, actividad, candidatos y documentos</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Bootstrap 5</span>
+                    <span class="tech-tag">openpyxl</span>
+                    <span class="tech-tag">fpdf2</span>
+                </div>
+                <div class="project-actions">
+                    <span class="btn-private">
+                        <i class="bi bi-lock"></i> Proyecto Privado
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---- HU Tracker (reverse) ---- -->
+        <div class="featured-project featured-reverse">
+            <div class="featured-media app-visual sim-mode">
+                <div class="hu-app-sim">
+                    <div class="sim-navbar">
+                        <span class="sim-brand"><i class="bi bi-kanban"></i> HU Tracker</span>
+                        <div class="sim-nav">
+                            <span>Proyectos</span>
+                            <span class="sim-nav-active">Tablero</span>
+                            <span>Sprints</span>
+                            <span>Reportes</span>
+                        </div>
+                        <div class="sim-user-av">MC</div>
+                    </div>
+                    <div class="sim-subbar">
+                        <div class="sim-subbar-left">
+                            <span class="sim-project-name">Portal Clientes v2</span>
+                            <span class="sim-sep">·</span>
+                            <span class="sim-sprint-name">Sprint 4</span>
+                        </div>
+                        <div class="sim-subbar-right">
+                            <div class="sim-prog-wrap">
+                                <div class="sim-prog-track">
+                                    <div class="sim-prog-fill" style="width:62%"></div>
+                                </div>
+                                <span class="sim-prog-pct">62%</span>
+                            </div>
+                            <span class="sim-days-left">14 días</span>
+                        </div>
+                    </div>
+                    <div class="sim-board">
+                        <div class="sim-col">
+                            <div class="sim-col-hdr">
+                                <span class="sim-col-dot" style="background:#94a3b8"></span>
+                                Pendiente <span class="sim-count">4</span>
+                            </div>
+                            <div class="sim-card">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">HU-018</span>
+                                    <span class="sim-prio high">Alta</span>
+                                </div>
+                                <div class="sim-title">Autenticación OAuth2</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#7c3aed">JR</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-041</span>
+                                    <span class="sim-prio med">Media</span>
+                                </div>
+                                <div class="sim-title">Paginación API REST</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#0891b2">MP</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">HU-020</span>
+                                    <span class="sim-prio low">Baja</span>
+                                </div>
+                                <div class="sim-title">Dark mode toggle</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#475569">SG</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-046</span>
+                                    <span class="sim-prio med">Media</span>
+                                </div>
+                                <div class="sim-title">Webhook notificaciones</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#ea580c">RV</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sim-col">
+                            <div class="sim-col-hdr">
+                                <span class="sim-col-dot" style="background:#3b82f6"></span>
+                                En Progreso <span class="sim-count sim-count-blue">4</span>
+                            </div>
+                            <div class="sim-card inprogress">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-038</span>
+                                    <span class="sim-prio high">Alta</span>
+                                </div>
+                                <div class="sim-title">Dashboard KPIs</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#1d4ed8">AG</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card timer-on">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-039</span>
+                                    <span class="sim-timer-pill">⏱ 1h 24m</span>
+                                </div>
+                                <div class="sim-title">Exportar reporte PDF</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#059669">LT</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card inprogress">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">HU-022</span>
+                                    <span class="sim-prio med">Media</span>
+                                </div>
+                                <div class="sim-title">Filtros avanzados</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#0891b2">MP</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card inprogress">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-042</span>
+                                    <span class="sim-prio high">Alta</span>
+                                </div>
+                                <div class="sim-title">Integración GLPI</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#7c3aed">JR</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sim-col">
+                            <div class="sim-col-hdr">
+                                <span class="sim-col-dot" style="background:#8b5cf6"></span>
+                                En Pruebas <span class="sim-count sim-count-purple">3</span>
+                            </div>
+                            <div class="sim-card qa-on">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">HU-015</span>
+                                    <span class="sim-prio high">Alta</span>
+                                </div>
+                                <div class="sim-title">Login + 2FA</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#d97706">QA</span></div>
+                                    <span class="sim-dep">⛓ 2 deps</span>
+                                </div>
+                            </div>
+                            <div class="sim-card qa-on">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-033</span>
+                                    <span class="sim-prio med">Media</span>
+                                </div>
+                                <div class="sim-title">Tests E2E sesión</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#d97706">QA</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card qa-on">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">HU-016</span>
+                                    <span class="sim-prio med">Media</span>
+                                </div>
+                                <div class="sim-title">Recuperar contraseña</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#d97706">QA</span></div>
+                                </div>
+                            </div>
+                            <div class="sim-card done-card">
+                                <div class="sim-card-top">
+                                    <span class="sim-id">TASK-031</span>
+                                    <span class="sim-prio low">Baja</span>
+                                </div>
+                                <div class="sim-title">CRUD Usuarios</div>
+                                <div class="sim-card-bot">
+                                    <div class="sim-avs"><span class="sim-av" style="background:#475569">SG</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sim-footer">
+                        <div class="sim-fs-item">
+                            <span class="sim-fs-val">11</span>
+                            <span class="sim-fs-lbl">Completadas</span>
+                        </div>
+                        <div class="sim-fs-sep"></div>
+                        <div class="sim-fs-item">
+                            <span class="sim-fs-val">8</span>
+                            <span class="sim-fs-lbl">En curso</span>
+                        </div>
+                        <div class="sim-fs-sep"></div>
+                        <div class="sim-fs-item">
+                            <span class="sim-fs-val">47.5h</span>
+                            <span class="sim-fs-lbl">Registradas</span>
+                        </div>
+                        <div class="sim-fs-sep"></div>
+                        <div class="sim-fs-item">
+                            <span class="sim-fs-val">34 pts</span>
+                            <span class="sim-fs-lbl">Velocidad</span>
+                        </div>
+                        <div class="sim-fs-chip">
+                            <span class="sim-fs-dot" style="background:#ef4444"></span>
+                            1 bloqueada
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="featured-content">
+                <span class="project-number">02 — Destacado</span>
+                <h3 class="featured-title">HU Tracker — Gestión de Proyectos de Software</h3>
+                <p class="project-description">
+                    Herramienta interna de gestión de proyectos con jerarquía completa (proyecto → historia
+                    de usuario → tarea → subtarea), tablero Kanban interactivo, sprints y seguimiento
+                    de tiempo integrado. Integración nativa con GLPI.
+                </p>
+                <ul class="project-features">
+                    <li>Kanban con drag & drop y 7 columnas; preferencias guardadas en localStorage</li>
+                    <li>Dependencias entre tareas en grafo DAG con detección de ciclos (DFS)</li>
+                    <li>Reasignación automática dev → QA → aprobación por cambio de estado</li>
+                    <li>Time tracker tipo Clockify: timer Play/Stop por tarea con log de horas</li>
+                    <li>Sprints con tablero de planificación, velocidad del equipo y capacidad de carga</li>
+                    <li>Reportes: ciclo de vida, horas por proyecto, tareas vencidas y ventanas de mantenimiento</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Bootstrap 5</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">GLPI API</span>
+                    <span class="tech-tag">openpyxl</span>
+                </div>
+                <div class="project-actions">
+                    <span class="btn-private">
+                        <i class="bi bi-lock"></i> Proyecto Privado
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- MORE PROJECTS header -->
+        <div class="section-header" style="margin-top: 5rem;">
+            <span class="section-label">Más Proyectos</span>
+            <h2 class="section-title-lg">Otros trabajos</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- MonitorMaster -->
+            <div class="project-card">
+                <div class="project-card-top">
+                    <i class="bi bi-activity"></i>
+                    <a href="https://github.com/mcubaque/MonitorMaster" target="_blank" class="project-card-link">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MonitorMaster</h3>
+                    <p class="project-description">
+                        Monitoreo de SQL Server en tiempo real: RAM, red, sesiones, bloqueos y consultas
+                        costosas. Alertas automáticas por email y generación de reportes PDF.
+                    </p>
+                    <div class="tech-stack" style="margin-top: auto; padding-top: 1rem;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">PyODBC</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cluster Patroni -->
+            <div class="project-card">
+                <div class="project-card-top">
+                    <i class="bi bi-hdd-network"></i>
+                    <a href="https://github.com/mcubaque/ClusterPatroni" target="_blank" class="project-card-link">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cluster Postgres — Patroni</h3>
+                    <p class="project-description">
+                        Clúster de PostgreSQL con alta disponibilidad: failover automático con Patroni,
+                        consenso distribuido con ETCD y balanceo de carga con HAProxy.
+                    </p>
+                    <div class="tech-stack" style="margin-top: auto; padding-top: 1rem;">
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Patroni</span>
+                        <span class="tech-tag">ETCD</span>
+                        <span class="tech-tag">HAProxy</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SkyMonitor -->
+            <div class="project-card">
+                <div class="project-card-top">
+                    <i class="bi bi-airplane"></i>
+                    <a href="https://github.com/mcubaque/radar" target="_blank" class="project-card-link">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">SkyMonitor</h3>
+                    <p class="project-description">
+                        Seguimiento de tráfico aéreo en tiempo real usando la API de OpenSky.
+                        Mapa interactivo de vuelos activos con historial almacenado en MySQL.
+                    </p>
+                    <div class="tech-stack" style="margin-top: auto; padding-top: 1rem;">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">OpenSky API</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ======================== CONTACT CTA ======================== -->
+        <div class="contact-section">
+            <h2>¿Trabajamos juntos?</h2>
+            <p>Disponible para nuevas oportunidades y proyectos de bases de datos o backend.</p>
+            <div class="contact-links">
+                <a href="mailto:mcubaque@gmail.com" class="btn-primary">
+                    <i class="bi bi-envelope"></i> Escribirme
+                </a>
+                <a href="https://www.linkedin.com/in/marcocubaque/" target="_blank" class="btn-secondary">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/mcubaque" target="_blank" class="btn-secondary">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+
     </main>
 
+    <!-- ======================== FOOTER ======================== -->
     <footer>
-        <div class="container">
-            <p>© 2025 Marco Cubaque - Software Engineer</p>
-        </div>
+        <p>© 2025 Marco Cubaque · Software Engineer & DBA · Bogotá, Colombia</p>
     </footer>
+
 </body>
 
 </html>

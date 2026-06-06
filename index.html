@@ -9,23 +9,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <meta name="description" content="CV - Marco Cubaque | Software Engineer & Database Administrator">
+    <meta name="author" content="Marco Cubaque">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -34,28 +27,28 @@
             <div class="profile-container">
                 <img class="profile" src="assets/images/marco.png" alt="" />
                 <h1 class="name">Marco Cubaque</h1>
-                <h3 class="tagline english">Software Engineere</br>(DBA | Application Development)</h3>
-                <h3 class="tagline spanish hidden">Ingeniero de Software </br>(DBA | Desarrollo de aplicaciones)</h3>
+                <h3 class="tagline english">Software Engineer<br>(DBA | Application Development)</h3>
+                <h3 class="tagline spanish hidden">Ingeniero de Software<br>(DBA | Desarrollo de aplicaciones)</h3>
                 <hr>
 
 
 
 
-                <div class="text-center">
-                    <input id="language" type="checkbox" checked data-offstyle="warning"
-                    data-toggle="toggle" data-on="English" data-off="Spanish">
+                <div class="lang-toggle">
+                    <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">English</button>
+                    <button class="lang-btn" id="btn-es" onclick="setLanguage('es')">Español</button>
                 </div>
 
-                <div class="text-center english"><a class="btn btn-primary" 
+                <div class="text-center english"><a class="btn btn-primary"
                     href="./portfolio/portafolio.html">Portfolio</a></div>
-                
-                <div class="text-center english"><a target="_blank" class="btn btn-primary" 
+
+                <div class="text-center english"><a target="_blank" class="btn btn-primary"
                     href="./assets/pdf/MarcoResumeEng.pdf">Download PDF</a></div>
-                    
-                <div class="text-center  spanish hidden"><a class="btn btn-primary" 
+
+                <div class="text-center spanish hidden"><a class="btn btn-primary"
                     href="./portfolio/portafolio.html">Ver Portafolio</a></div>
-                
-                <div class="text-center  spanish hidden"><a target="_blank" class="btn btn-primary" 
+
+                <div class="text-center spanish hidden"><a target="_blank" class="btn btn-primary"
                     href="./assets/pdf/MarcoResume.pdf">Descargar PDF</a></div>
                 
 
@@ -130,49 +123,46 @@
 <div class="self-desc english">
     <p>
         If I could dedicate my life to one thing, it would be learning.
-
     </p>
-
     <p>
-
-        Throughout my professional career, I have had the privilege of immersing myself 
-        in a wide spectrum of technological knowledge. From mastering various technologies 
-        to adopting innovative approaches and agile methodologies, my career has been 
+        Throughout my professional career, I have had the privilege of immersing myself
+        in a wide spectrum of technological knowledge. From mastering various technologies
+        to adopting innovative approaches and agile methodologies, my career has been
         a constant adventure of growth and discovery.
     </p>
-        Beyond programming and solving technical problems, I have greatly valued the importance 
-        of teamwork and creating a collaborative and productive work environment. I love inspiring 
+    <p>
+        Beyond programming and solving technical problems, I have greatly valued the importance
+        of teamwork and creating a collaborative and productive work environment. I love inspiring
         and motivating my team to reach their full potential and together achieve exceptional results.
-
-        Although my main focus has been on the development and administration of databases, 
-        I have also explored other areas of software development with enthusiasm. I have had the opportunity 
-        to work on multi-platform web-oriented projects, where I have been able to apply my technical 
+    </p>
+    <p>
+        Although my main focus has been on the development and administration of databases,
+        I have also explored other areas of software development with enthusiasm. I have had the opportunity
+        to work on multi-platform web-oriented projects, where I have been able to apply my technical
         expertise and creativity to develop innovative solutions.
     </p>
-
 </div>
 <div class="self-desc spanish hidden">
     <p>
         Si pudiera hacer algo por toda mi vida, sería aprender.
-
     </p>
-
     <p>
-        A lo largo de mi trayectoria profesional, he tenido el privilegio de sumergirme en un amplio espectro 
-        de conocimientos tecnológicos. Desde el dominio de diversas tecnologías hasta la adopción de enfoques 
-        innovadores y metodologías ágiles, mi carrera ha sido una aventura constante de crecimiento y descubrimiento..
+        A lo largo de mi trayectoria profesional, he tenido el privilegio de sumergirme en un amplio espectro
+        de conocimientos tecnológicos. Desde el dominio de diversas tecnologías hasta la adopción de enfoques
+        innovadores y metodologías ágiles, mi carrera ha sido una aventura constante de crecimiento y descubrimiento.
     </p>
-    Más allá de la programación y la resolución de problemas técnicos, he valorado enormemente la importancia de 
-    trabajar en equipo y crear un ambiente de trabajo colaborativo y productivo. Me encanta inspirar y motivar a 
-    mi equipo para alcanzar su máximo potencial y juntos lograr resultados excepcionales.
-
-    Aunque mi enfoque principal ha sido en el desarrollo y administración de bases de datos, también he explorado 
-    otras áreas del desarrollo de software con entusiasmo. He tenido la oportunidad de trabajar en proyectos 
-    multiplataforma orientados a la web, donde he podido aplicar mi experiencia técnica y creatividad para desarrollar soluciones innovadoras.
-    
-    Mi compromiso constante es seguir creciendo, aprendiendo y superando desafíos en este apasionante campo de la tecnología, y estoy emocionado por lo que el futuro me depara.
+    <p>
+        Más allá de la programación y la resolución de problemas técnicos, he valorado enormemente la importancia de
+        trabajar en equipo y crear un ambiente de trabajo colaborativo y productivo. Me encanta inspirar y motivar a
+        mi equipo para alcanzar su máximo potencial y juntos lograr resultados excepcionales.
     </p>
-
+    <p>
+        Aunque mi enfoque principal ha sido en el desarrollo y administración de bases de datos, también he explorado
+        otras áreas del desarrollo de software con entusiasmo. He tenido la oportunidad de trabajar en proyectos
+        multiplataforma orientados a la web, donde he podido aplicar mi experiencia técnica y creatividad para
+        desarrollar soluciones innovadoras. Mi compromiso constante es seguir creciendo, aprendiendo y superando
+        desafíos en este apasionante campo de la tecnología.
+    </p>
 </div>
 
 
@@ -538,7 +528,6 @@
     <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>

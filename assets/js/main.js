@@ -1,37 +1,28 @@
 jQuery(document).ready(function($) {
 
-
-    /*======= Skillset *=======*/
-    
-    
+    /* Skill bar animation */
     $('.level-bar-inner').css('width', '0');
-    
+
     $(window).on('load', function() {
-
         $('.level-bar-inner').each(function() {
-        
             var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
+            $(this).animate({ width: itemWidth }, 900);
         });
-
     });
-   
-
-  $('#language').change(function() {
-    console.log(this.checked);
-    if(this.checked){
-        $(".english").removeClass("hidden");
-        $(".spanish").addClass("hidden");
-    }else{
-        $(".spanish").removeClass("hidden");
-        $(".english").addClass("hidden");
-    }
-
-  })
-    
 
 });
+
+/* Language toggle */
+function setLanguage(lang) {
+    if (lang === 'en') {
+        jQuery(".english").removeClass("hidden");
+        jQuery(".spanish").addClass("hidden");
+        jQuery("#btn-en").addClass("active");
+        jQuery("#btn-es").removeClass("active");
+    } else {
+        jQuery(".spanish").removeClass("hidden");
+        jQuery(".english").addClass("hidden");
+        jQuery("#btn-es").addClass("active");
+        jQuery("#btn-en").removeClass("active");
+    }
+}
