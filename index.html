@@ -5,7 +5,6 @@
 
 <head>
     <title>CV - Marco Cubaque</title>
-    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,8 @@
     <meta name="author" content="Marco Cubaque">
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -25,510 +21,422 @@
     <div class="wrapper">
         <div class="sidebar-wrapper">
             <div class="profile-container">
-                <img class="profile" src="assets/images/marco.png" alt="" />
+                <img class="profile" src="assets/images/marco.png" alt="Marco Cubaque" />
                 <h1 class="name">Marco Cubaque</h1>
                 <h3 class="tagline english">Software Engineer<br>(DBA | Application Development)</h3>
                 <h3 class="tagline spanish hidden">Ingeniero de Software<br>(DBA | Desarrollo de aplicaciones)</h3>
                 <hr>
-
-
-
 
                 <div class="lang-toggle">
                     <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">English</button>
                     <button class="lang-btn" id="btn-es" onclick="setLanguage('es')">Español</button>
                 </div>
 
-                <div class="text-center english"><a class="btn btn-primary"
-                    href="./portfolio/portafolio.html">Portfolio</a></div>
-
-                <div class="text-center english"><a target="_blank" class="btn btn-primary"
-                    href="./assets/pdf/MarcoResumeEng.pdf">Download PDF</a></div>
-
-                <div class="text-center spanish hidden"><a class="btn btn-primary"
-                    href="./portfolio/portafolio.html">Ver Portafolio</a></div>
-
-                <div class="text-center spanish hidden"><a target="_blank" class="btn btn-primary"
-                    href="./assets/pdf/MarcoResume.pdf">Descargar PDF</a></div>
-                
-
-            </div><!--// Perfil-->
+                <div class="text-center english">
+                    <a class="btn btn-primary" href="./portfolio/portafolio.html">Portfolio</a>
+                </div>
+                <div class="text-center english">
+                    <a target="_blank" class="btn btn-primary" href="./assets/pdf/MarcoResumeEng.pdf">Download PDF</a>
+                </div>
+                <div class="text-center spanish hidden">
+                    <a class="btn btn-primary" href="./portfolio/portafolio.html">Ver Portafolio</a>
+                </div>
+                <div class="text-center spanish hidden">
+                    <a target="_blank" class="btn btn-primary" href="./assets/pdf/MarcoResume.pdf">Descargar PDF</a>
+                </div>
+            </div><!--//profile-->
 
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="#" >mcubaque@gmail.com</a></li>
-                    <li class="phone"><i class="fa fa-phone"></i>+57 3196850846</li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/marcocubaque/" target="_blank">linkedin.com/in/marcocubaque/</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/mcubaque" target="_blank">@mcubaque</a></li>
-
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:mcubaque@gmail.com">mcubaque@gmail.com</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i>+57 319 685 0846</li>
+                    <li><i class="fa fa-map-marker"></i>Bogotá, Colombia</li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/marcocubaque/" target="_blank">linkedin.com/in/marcocubaque</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://github.com/mcubaque" target="_blank">github.com/mcubaque</a></li>
                 </ul>
-            </div><!--//Contacto-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title english"> Education </h2>
-                <h2 class="container-block-title spanish hidden"> Educación </h2>
-                <div class="item">
-                    <h4 class="degree english">Software Engineer</h4>
-                    <h4 class="degree spanish hidden">Ingeniero de Software</h4>
-                    <h5 class="meta">Politecnico Grancolombiano</h5>
-                    <div class="time">2019 - 2023</div>
-                </div><!--//item-->
-            </div><!--//Educación y estudios-->
+            </div><!--//contact-->
 
-            
+            <div class="education-container container-block">
+                <h2 class="container-block-title english">Education</h2>
+                <h2 class="container-block-title spanish hidden">Educación</h2>
+                <div class="item">
+                    <h4 class="degree english">Software Engineering (B.Sc.)</h4>
+                    <h4 class="degree spanish hidden">Ingeniería de Software</h4>
+                    <h5 class="meta">Politécnico Grancolombiano</h5>
+                    <div class="time">2021 – 2023</div>
+                </div>
+                <div class="item">
+                    <h4 class="degree english">Systems Analysis &amp; Development (A.S.)</h4>
+                    <h4 class="degree spanish hidden">Análisis y Desarrollo de Sistemas</h4>
+                    <h5 class="meta">SENA</h5>
+                    <div class="time">2017 – 2020</div>
+                </div>
+            </div><!--//education-->
+
             <div class="languages-container container-block">
                 <h2 class="container-block-title english">Languages</h2>
                 <h2 class="container-block-title spanish hidden">Idiomas</h2>
                 <ul class="list-unstyled interests-list english">
                     <li>Spanish <span class="lang-desc">(Native)</span></li>
-                    <li>English <span class="lang-desc">(Basic)</span></li>
+                    <li>English <span class="lang-desc">(Intermediate – B1)</span></li>
                 </ul>
                 <ul class="list-unstyled interests-list spanish hidden">
                     <li>Español <span class="lang-desc">(Nativo)</span></li>
-                    <li>Ingles <span class="lang-desc">(Basico)</span></li>
+                    <li>Inglés <span class="lang-desc">(Intermedio – B1)</span></li>
                 </ul>
-            </div><!--//Idiomas-->
-
-
+            </div><!--//languages-->
 
             <div class="interests-container container-block english">
                 <h2 class="container-block-title">Interests</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Software and Open Source Hardware</li>
+                    <li>Software &amp; Open Source Hardware</li>
                     <li>Astronomy</li>
                     <li>Music (Playing Drums)</li>
                     <li>Motorcycling</li>
                 </ul>
-            </div><!--//interests-->
+            </div>
             <div class="interests-container container-block spanish hidden">
                 <h2 class="container-block-title">Intereses</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Software, Hardware y Cultura de Código Abierto</li>
-                    <li>Astronomia</li>
-                    <li>Música (Tocar Batería)</li>
+                    <li>Software, Hardware y Código Abierto</li>
+                    <li>Astronomía</li>
+                    <li>Música (Batería)</li>
                     <li>Motociclismo</li>
                 </ul>
-            </div><!--//interests-->
+            </div>
 
         </div><!--//sidebar-->
 
         <div class="main-wrapper">
 
-
- 			<section class="section summary-section">
-                
-                <h2 class="section-title english"><i class="fa fa-user"></i>Career Profile </h2>
-                <h2 class="section-title spanish hidden"><i class="fa fa-user"></i>Perfil Profesional </h2>
+            <!-- ===== CAREER PROFILE ===== -->
+            <section class="section summary-section">
+                <h2 class="section-title english"><i class="fa fa-user"></i>Career Profile</h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-user"></i>Perfil Profesional</h2>
                 <div class="summary">
-                    
-<div class="self-desc english">
-    <p>
-        If I could dedicate my life to one thing, it would be learning.
-    </p>
-    <p>
-        Throughout my professional career, I have had the privilege of immersing myself
-        in a wide spectrum of technological knowledge. From mastering various technologies
-        to adopting innovative approaches and agile methodologies, my career has been
-        a constant adventure of growth and discovery.
-    </p>
-    <p>
-        Beyond programming and solving technical problems, I have greatly valued the importance
-        of teamwork and creating a collaborative and productive work environment. I love inspiring
-        and motivating my team to reach their full potential and together achieve exceptional results.
-    </p>
-    <p>
-        Although my main focus has been on the development and administration of databases,
-        I have also explored other areas of software development with enthusiasm. I have had the opportunity
-        to work on multi-platform web-oriented projects, where I have been able to apply my technical
-        expertise and creativity to develop innovative solutions.
-    </p>
-</div>
-<div class="self-desc spanish hidden">
-    <p>
-        Si pudiera hacer algo por toda mi vida, sería aprender.
-    </p>
-    <p>
-        A lo largo de mi trayectoria profesional, he tenido el privilegio de sumergirme en un amplio espectro
-        de conocimientos tecnológicos. Desde el dominio de diversas tecnologías hasta la adopción de enfoques
-        innovadores y metodologías ágiles, mi carrera ha sido una aventura constante de crecimiento y descubrimiento.
-    </p>
-    <p>
-        Más allá de la programación y la resolución de problemas técnicos, he valorado enormemente la importancia de
-        trabajar en equipo y crear un ambiente de trabajo colaborativo y productivo. Me encanta inspirar y motivar a
-        mi equipo para alcanzar su máximo potencial y juntos lograr resultados excepcionales.
-    </p>
-    <p>
-        Aunque mi enfoque principal ha sido en el desarrollo y administración de bases de datos, también he explorado
-        otras áreas del desarrollo de software con entusiasmo. He tenido la oportunidad de trabajar en proyectos
-        multiplataforma orientados a la web, donde he podido aplicar mi experiencia técnica y creatividad para
-        desarrollar soluciones innovadoras. Mi compromiso constante es seguir creciendo, aprendiendo y superando
-        desafíos en este apasionante campo de la tecnología.
-    </p>
-</div>
+                    <div class="self-desc english">
+                        <p>
+                            Software Engineer and Database Administrator with 5+ years of experience designing,
+                            optimizing, and migrating enterprise data environments. Specialist in SQL Server,
+                            MySQL, and PostgreSQL, with strong focus on high availability, performance tuning,
+                            and backend development with Python and Flask.
+                        </p>
+                        <p>
+                            Currently at AGS Colombia, I lead full-stack development of internal enterprise
+                            platforms — including an AI-powered recruitment system (OpenAI/Groq) and a
+                            project management tool with Kanban, sprints, and time tracking — combining
+                            deep DBA expertise with application development. Previous experience includes
+                            building PostgreSQL HA clusters with Patroni, HAProxy, and Docker at RithmXO,
+                            and delivering data-driven solutions across technology, HR, and finance operations.
+                        </p>
+                        <p>
+                            Open to relocation and international opportunities.
+                        </p>
+                    </div>
+                    <div class="self-desc spanish hidden">
+                        <p>
+                            Ingeniero de Software y Administrador de Bases de Datos con más de 5 años de experiencia
+                            diseñando, optimizando y migrando entornos de datos empresariales. Especialista en
+                            SQL Server, MySQL y PostgreSQL, con enfoque sólido en alta disponibilidad, optimización
+                            de rendimiento y desarrollo backend con Python y Flask.
+                        </p>
+                        <p>
+                            Actualmente en AGS Colombia, lidero el desarrollo full-stack de plataformas empresariales
+                            internas — incluyendo un sistema de reclutamiento con IA (OpenAI/Groq) y una herramienta
+                            de gestión de proyectos con Kanban, sprints y time tracking — combinando profundidad en DBA
+                            con desarrollo de aplicaciones. Experiencia previa construyendo clústeres de alta disponibilidad
+                            PostgreSQL con Patroni, HAProxy y Docker en RithmXO, y entregando soluciones de datos para
+                            operaciones de tecnología, RRHH y finanzas.
+                        </p>
+                        <p>
+                            Disponible para reubicación y oportunidades internacionales.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-
-                </div><!--//resumen-->
-            </section><!--//section-->
-
-
+            <!-- ===== SKILLS ===== -->
             <section class="skills-section section">
-                <h2 class="section-title english"><i class="fa fa-code-fork"></i> Skills & Proficiency </h2>
+                <h2 class="section-title english"><i class="fa fa-code-fork"></i>Skills &amp; Proficiency</h2>
                 <h2 class="section-title spanish hidden"><i class="fa fa-code-fork"></i>Habilidades y Destrezas</h2>
                 <div class="skillset">
                     <div class="item">
-                        <h3 class="level-title">Python & Flask</h3>
+                        <h3 class="level-title">Python &amp; Flask</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
+                            <div class="level-bar-inner" data-level="95%"></div>
+                        </div>
+                    </div>
                     <div class="item">
-                        <h3 class="level-title">PHP</h3>
+                        <h3 class="level-title">SQL Server (T-SQL)</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">SQL Server</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
+                            <div class="level-bar-inner" data-level="90%"></div>
+                        </div>
+                    </div>
                     <div class="item">
                         <h3 class="level-title">PostgreSQL</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
+                            <div class="level-bar-inner" data-level="85%"></div>
+                        </div>
+                    </div>
                     <div class="item">
                         <h3 class="level-title">MySQL</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner"  data-level="70%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-                     
+                            <div class="level-bar-inner" data-level="75%"></div>
+                        </div>
+                    </div>
                     <div class="item">
-                        <h3 class="level-title">SQLite</h3>
+                        <h3 class="level-title">FastAPI</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-                    
+                            <div class="level-bar-inner" data-level="75%"></div>
+                        </div>
+                    </div>
                     <div class="item">
-                        <h3 class="level-title">Javascript</h3>
+                        <h3 class="level-title">JavaScript</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="40%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-                    
-
+                            <div class="level-bar-inner" data-level="55%"></div>
+                        </div>
+                    </div>
                 </div>
-            </section><!--//-Habulidades-->
+            </section>
 
             <section class="skills-section section">
-                <h2 class="section-title english"><i class="fa fa-rocket"></i>Other technologies and expertise</h2>
-                <h2 class="section-title spanish hidden"><i class="fa fa-rocket"></i>Otras tecnologías y conocimientos</h2>
+                <h2 class="section-title english"><i class="fa fa-rocket"></i>Tools &amp; Infrastructure</h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-rocket"></i>Herramientas e Infraestructura</h2>
                 <div class="skillset">
-
                     <div class="item">
                         <h3 class="level-title">Git</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->                 
-
+                            <div class="level-bar-inner" data-level="90%"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Scrum / Agile</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%"></div>
+                        </div>
+                    </div>
                     <div class="item">
                         <h3 class="level-title">Docker</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="65%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-                    
+                            <div class="level-bar-inner" data-level="70%"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Bootstrap 5</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="70%"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">Patroni / HAProxy</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="65%"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h3 class="level-title">OpenAI / Groq API</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="65%"></div>
+                        </div>
+                    </div>
                     <div class="item">
                         <h3 class="level-title">Linux</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Scrum</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="80%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
-                    <div class="item">
-                        <h3 class="level-title">Wordpress</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="50%">
-                            </div>
-                        </div><!--//level-bar-->
-                    </div><!--//item-->
-
+                            <div class="level-bar-inner" data-level="60%"></div>
+                        </div>
+                    </div>
                 </div>
-            </section><!--//-Habulidades--> 
+            </section>
 
-
+            <!-- ===== EXPERIENCE ===== -->
             <section class="section experiences-section">
-                <h2 class="section-title english"><i class="fa fa-briefcase"></i>Experiences </h2>
-                <h2 class="section-title spanish hidden"><i class="fa fa-briefcase"></i>Experiencias </h2>
+                <h2 class="section-title english"><i class="fa fa-briefcase"></i>Experience</h2>
+                <h2 class="section-title spanish hidden"><i class="fa fa-briefcase"></i>Experiencia</h2>
 
+                <!-- AGS Colombia -->
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Database Administrator &amp; Software Developer</h3>
+                            <div class="time english">October 2025 – Present</div>
+                            <div class="time spanish hidden">Octubre 2025 – Actualidad</div>
+                        </div>
+                        <div class="company">AGS Colombia SAS</div>
+                    </div>
+                    <div class="details">
+                        <span class="english">Stack: </span>
+                        <span class="spanish hidden">Stack: </span>
+                        <p>Python, Flask, SQL Server, MySQL, PostgreSQL, Bootstrap 5, OpenAI/Groq API, GLPI API, Chart.js, openpyxl, fpdf2.</p>
+                        <ul class="english">
+                            <li>Full-stack development of enterprise internal applications for medical audit, HR, and project management.</li>
+                            <li>Built <strong>GestionRH</strong>: full-cycle recruitment platform with 7-stage pipeline, AI-powered CV parsing (OpenAI/Groq), candidate compatibility scoring 0–100%, and automated email notifications.</li>
+                            <li>Built <strong>HU Tracker</strong>: internal project management tool with Kanban board, sprint planning, time tracking (Clockify-style), task dependency graph (DAG), and GLPI integration.</li>
+                            <li>Designed and optimized relational schemas in SQL Server, MySQL, and PostgreSQL for mission-critical corporate applications.</li>
+                            <li>Collaborated with Technology, HR, and Finance teams in requirements gathering, technical design, and production deployments.</li>
+                        </ul>
+                        <ul class="spanish hidden">
+                            <li>Desarrollo full-stack de aplicaciones internas para auditoría médica, gestión humana y gestión de proyectos.</li>
+                            <li>Desarrollé <strong>GestionRH</strong>: plataforma de reclutamiento con pipeline de 7 etapas, parser de CVs con IA (OpenAI/Groq), score de compatibilidad 0–100% y notificaciones automáticas por email.</li>
+                            <li>Desarrollé <strong>HU Tracker</strong>: herramienta de gestión de proyectos con tablero Kanban, sprints, time tracking estilo Clockify, grafo de dependencias (DAG) e integración GLPI.</li>
+                            <li>Diseñé y optimicé esquemas relacionales en SQL Server, MySQL y PostgreSQL para aplicaciones corporativas de misión crítica.</li>
+                            <li>Colaboré con equipos de Tecnología, RRHH y Finanzas en levantamiento de requerimientos, diseño técnico y puesta en producción.</li>
+                        </ul>
+                    </div>
+                </div>
 
-
-
+                <!-- RithmXO -->
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">Database Administrator Engineer</h3>
-
-                            <div class="time english">March 2024 - September 2025 (1 year 6 months)</div>
-                            <div class="time spanish hidden">Marzo de 2024 - Septiembre de 2025 (1 año 6 meses)</div>
-                        </div><!--//upper-row-->
-                        <div class="company">RithmXO</div>
-                    </div><!--//meta-->
+                            <div class="time english">March 2024 – September 2025 (1 yr 6 mo)</div>
+                            <div class="time spanish hidden">Marzo 2024 – Septiembre 2025 (1 año 6 meses)</div>
+                        </div>
+                        <div class="company">RithmXO — Lindon, UT (Remote)</div>
+                    </div>
                     <div class="details">
-
-                        <span class="english">Knowledge Base: </span>
-                        <span class="spanish hidden">Base de Conocimientos: </span>
-                        <p>
-                            SQL Server, MySQL, PostgreSQL, Python, JS, Docker, Excel.
-                        </p>
-                        <ul class="spanish hidden">
-                            <li>Administración de servidores y bases de datos.</li>
-                            <li>Optimización de consultas, índices y procedimientos almacenados.</li>
-                            <li>Migración de entornos MSSQL → PostgreSQL.</li>
-                            <li>Configuración de monitoreo, alertas y auditorías.</li>
-                            <li>Documentación de estándares y soporte a desarrollo.</li>
-                        </ul>
+                        <span class="english">Stack: </span>
+                        <span class="spanish hidden">Stack: </span>
+                        <p>SQL Server, MySQL, PostgreSQL, Python, Docker, Patroni, HAProxy, Linux.</p>
                         <ul class="english">
-                            <li>Administration of servers and databases.</li>
-                            <li>Query, index, and stored procedure performance optimization.</li>
-                            <li>Migration of MSSQL environments → PostgreSQL.</li>
-                            <li>Configuration of monitoring, alerts, and audits.</li>
-                            <li>Documentation of standards and development support.</li>
+                            <li>Administration and optimization of SQL Server and PostgreSQL instances across Linux and Windows environments.</li>
+                            <li>Led migration of MSSQL databases to PostgreSQL, reducing licensing costs and improving scalability.</li>
+                            <li>Designed and deployed a PostgreSQL HA cluster using Docker, Patroni, and HAProxy — achieving automatic failover and load balancing.</li>
+                            <li>Implemented proactive monitoring and alerting systems, preventing critical production incidents.</li>
+                            <li>Optimized queries and indexes, significantly reducing execution times on high-traffic workloads.</li>
+                            <li>Standardized data modeling criteria and documented stress-test procedures across all environments.</li>
                         </ul>
-
-
-                    <p class="english">I successfully led the migration of MSSQL databases to PostgreSQL, 
-                        reducing costs and improving data environment scalability. I designed and configured 
-                        PostgreSQL clusters on Linux using Docker, Patroni, and HAProxy, achieving high 
-                        availability, load balancing, and automatic failover. Additionally, I implemented 
-                        alerts and proactive monitoring to prevent critical incidents, optimized queries
-                        and created indexes that significantly reduced execution times, and standardized 
-                        modeling criteria with detailed stress test documentation, ensuring system consistency 
-                        and reliability.
-                    </p>
-
-                    <p class="spanish hidden">He liderado la migración exitosa de bases de datos MSSQL a PostgreSQL, 
-                        reduciendo costos y mejorando la escalabilidad de los entornos de datos. Diseñé y configuré 
-                        clústeres de PostgreSQL en Linux utilizando Docker, Patroni y HAProxy, alcanzando alta 
-                        disponibilidad, balanceo de carga y recuperación automática ante fallos. Además, implementé 
-                        alertas y monitoreo proactivo para prevenir incidentes críticos, optimicé consultas y creé 
-                        índices que redujeron significativamente los tiempos de ejecución, y establecí criterios 
-                        estandarizados de modelado junto con documentación detallada de pruebas de estrés, garantizando 
-                        la consistencia y confiabilidad de los sistemas.
-                    </p>
-                    </div><!--//details-->
+                        <ul class="spanish hidden">
+                            <li>Administración y optimización de instancias SQL Server y PostgreSQL en entornos Linux y Windows.</li>
+                            <li>Lideré migración de bases de datos MSSQL a PostgreSQL, reduciendo costos de licenciamiento y mejorando escalabilidad.</li>
+                            <li>Diseñé y desplegué clúster de alta disponibilidad PostgreSQL con Docker, Patroni y HAProxy, logrando failover automático y balanceo de carga.</li>
+                            <li>Implementé sistemas de monitoreo proactivo y alertas, previniendo incidentes críticos en producción.</li>
+                            <li>Optimicé consultas e índices, reduciendo significativamente tiempos de ejecución en cargas de trabajo de alto tráfico.</li>
+                            <li>Estandaricé criterios de modelado y documenté procedimientos de pruebas de estrés en todos los entornos.</li>
+                        </ul>
+                    </div>
                 </div>
-                
-                
-                
+
+                <!-- Atica -->
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">Database Administrator</h3>
-
-                            <div class="time english">November 2021 - April 2023 (1 year 6 months)</div>
-                            <div class="time spanish hidden">Noviembre de 2021 - Abril de 2023 (1 año 6 meses)</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Atica-Industria ambiental</div>
-                    </div><!--//meta-->
+                            <div class="time english">November 2021 – April 2023 (1 yr 6 mo)</div>
+                            <div class="time spanish hidden">Noviembre 2021 – Abril 2023 (1 año 6 meses)</div>
+                        </div>
+                        <div class="company">Atica — Industria Ambiental</div>
+                    </div>
                     <div class="details">
-
-                        <span class="english">Knowledge Base: </span>
-                        <span class="spanish hidden">Base de Conocimientos: </span>
-                        <p>
-                            SQL Server, MySQL, Python, Power BI, Excel.
-                        </p>
-                        <ul class="spanish hidden">
-                            <li>Diseño y administración de la infraestructura tecnológica de red.</li>
-                            <li>Análisis y creación de modelos relacionales</li>
-                            <li>Gestión de riesgos de soluciones de tecnologías de la información y las
-                                comunicaciones.</li>
-                            <li>Creacion de reportes dinamicos</li>
-                            <li>Implementación y control del sistema de seguridad de la información.</li>
-                            <li>Supervisión de personal a cargo.</li>
-                        </ul>
+                        <span class="english">Stack: </span>
+                        <span class="spanish hidden">Stack: </span>
+                        <p>SQL Server, MySQL, Python, Power BI, Excel.</p>
                         <ul class="english">
-
-                            <li>Design and administration of network technology infrastructure.</li>
-                            <li>Modeling database logical structure</li>
-                            <li>Management of risks associated with information and communications technology solutions.</li>
-                            <li>Develop dinamic reports</li>
-                            <li>Implementation and control of the information security system.</li>
-                            <li>Supervision of subordinate personnel.</li>
+                            <li>Design and administration of network and database infrastructure.</li>
+                            <li>Relational data modeling and logical structure design.</li>
+                            <li>Risk management for information and communications technology solutions.</li>
+                            <li>Development of dynamic reports and dashboards (Power BI).</li>
+                            <li>Implementation and control of the information security management system.</li>
+                            <li>Supervision of technical staff.</li>
                         </ul>
-
-
-                    <p class="english">Successful implementation of an Information Management and Security System: 
-                        I designed comprehensive policies and protocols to efficiently and securely manage data. 
-                        I led the implementation of an advanced technological solution that improved information accessibility, 
-                        optimized operational efficiency, and strengthened regulatory compliance.
-                    </p>
-
-                    <p class="spanish hidden">•Implementación exitosa de un Sistema de Gestión y Seguridad de la
-                        Información: Diseñé políticas y protocolos integrales para gestionar datos
-                        de manera eficiente y segura. Lideré la implementación de una solución
-                        tecnológica avanzada que mejoró la accesibilidad a la información, optimicé la
-                        eficiencia operativa y fortalecí el cumplimiento normativo
-                    </p>
-                    </div><!--//details-->
+                        <ul class="spanish hidden">
+                            <li>Diseño y administración de infraestructura de red y bases de datos.</li>
+                            <li>Modelado relacional y diseño de estructura lógica de datos.</li>
+                            <li>Gestión de riesgos de soluciones de tecnologías de la información.</li>
+                            <li>Desarrollo de reportes dinámicos y dashboards (Power BI).</li>
+                            <li>Implementación y control del sistema de gestión y seguridad de la información.</li>
+                            <li>Supervisión de personal técnico a cargo.</li>
+                        </ul>
+                        <p class="english">Designed comprehensive information security policies and protocols; led implementation of a data management solution that improved information accessibility and operational efficiency while strengthening regulatory compliance.</p>
+                        <p class="spanish hidden">Diseñé políticas y protocolos integrales de seguridad de la información; lideré la implementación de una solución de gestión de datos que mejoró la accesibilidad a la información y la eficiencia operativa, fortaleciendo el cumplimiento normativo.</p>
+                    </div>
                 </div>
 
-                
-
+                <!-- SyT -->
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Database Administrator |Web Developer</h3>
-                            <div class="time english">July 2020 - Sept 2021 (1 year 3 months) </div>
-                            <div class="time spanish hidden">Julio de 2020 - Sept de 2021 (1 año 3 meses) </div>
-                        </div><!--//upper-row-->
+                            <h3 class="job-title">Database Administrator &amp; Web Developer</h3>
+                            <div class="time english">June 2020 – June 2021 (1 yr)</div>
+                            <div class="time spanish hidden">Junio 2020 – Junio 2021 (1 año)</div>
+                        </div>
                         <div class="company">SyT Comunicaciones</div>
-                    </div><!--//meta-->
+                    </div>
                     <div class="details">
-                        <span class="english">Knowledge Base: </span>
-                        <span class="spanish hidden">Base de Conocimientos: </span>
-
-                        <p>
-                            PHP, MySQL, Worpres, Git.
-                        </p>
+                        <span class="english">Stack: </span>
+                        <span class="spanish hidden">Stack: </span>
+                        <p>PHP, MySQL, WordPress, Git, HTML, CSS, Bootstrap.</p>
                         <ul class="english">
-                            <li>Design and development of computer applications.</li>
-                            <li>Evaluation of computer application requirements.</li>
-                            <li>Develop scalable new features</li>
-                            <li>Services optimizations</li>
-                            <li>Instance Monitoring</li>
-                            <li>Document and Respond to integration clients</li>
-                            <li>Testing of computer applications</li>
-                            <li>Implementation of computer applications.</li>
+                            <li>Design and development of web applications and computer systems.</li>
+                            <li>Requirements evaluation and scalable architecture planning.</li>
+                            <li>Service and database query optimization.</li>
+                            <li>Instance monitoring and incident response.</li>
+                            <li>Testing and deployment of computer applications.</li>
+                            <li>Documentation and support for integration clients.</li>
                         </ul>
                         <ul class="spanish hidden">
-                            <li>Diseño y desarrollo de aplicaciones informáticas.</li>
-                            <li>Evaluación de requisitos de aplicaciones informáticas.</li>
-                            <li>Planeación de estructuras escalables</li>
-                            <li>Optimización de servicios</li>
-                            <li>Monitoreo de Instancias</li>
-                            <li>Documentar y Responder a clientes de integración</li>
-                            <li>Pruebas de aplicaciones informáticas.</li>
-                            <li>Implementación de aplicaciones informáticas.</li>
+                            <li>Diseño y desarrollo de aplicaciones web y sistemas informáticos.</li>
+                            <li>Evaluación de requerimientos y planificación de arquitecturas escalables.</li>
+                            <li>Optimización de servicios y consultas de bases de datos.</li>
+                            <li>Monitoreo de instancias y respuesta a incidentes.</li>
+                            <li>Pruebas e implementación de aplicaciones informáticas.</li>
+                            <li>Documentación y soporte a clientes de integración.</li>
                         </ul>
-
-                        <p class="english">• Comprehensive System Development: I was responsible for conceiving, developing, 
-                            and executing a robust customer management system, including centralized customer data administration, 
-                            alert generation, and customized notifications. <br>
-                            • Improvement of Customer Experience: The implementation of this system allowed for an enhanced customer 
-                            experience by providing real-time relevant information addressing individual customer needs. <br>
-                            • Increase in Retention and Loyalty: Significant increase in customer retention and loyalty, 
-                            enhancing overall customer satisfaction. <br>
-                            • Process Automation: Automation of repetitive manual tasks, resulting in increased operational 
-                            efficiency and enhanced ability to 
-                            provide faster and more accurate service to customers.
-                       </p>
-                       <p class="spanish hidden">•Desarrollo Integral del Sistema: Fui el responsable de concebir, desarrollar
-                        y ejecutar un sistema de gestión de clientes robusto, que incluye la
-                        administración centralizada de datos de clientes, la generación de alertas y
-                        notificaciones personalizadas. <br>
-                        •Mejora de la Experiencia del Cliente: La implementación de este sistema
-                        permitió ofrecer una experiencia del cliente mejorada al proporcionar
-                        información relevante en tiempo real que atienden las necesidades
-                        individuales de los clientes. <br>
-                        •Incremento de la Retención y la Fidelización: Aumento significativo en la
-                        retención de clientes y en la fidelización, mejorando la satisfacción general del
-                        cliente. <br>
-                        •Automatización de Procesos: Automatización de tareas manuales repetitivas,
-                        lo que resultó en una mayor eficiencia operativa y una mayor capacidad para
-                        brindar un servicio más rápido y preciso a clientes.
-                        </p>
-                    </div><!--//details-->
+                        <p class="english">Developed a comprehensive customer management system with centralized data administration, automated alert generation, and personalized notifications — increasing customer retention and automating repetitive manual tasks for improved operational efficiency.</p>
+                        <p class="spanish hidden">Desarrollé un sistema integral de gestión de clientes con administración centralizada de datos, generación automática de alertas y notificaciones personalizadas — incrementando la retención de clientes y automatizando tareas repetitivas para mayor eficiencia operativa.</p>
+                    </div>
                 </div>
 
+            </section>
 
-            </section><!--//section-->
-
-
-
+            <!-- ===== CERTIFICATIONS ===== -->
             <div class="english">
                 <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-archive"></i>Achievements (Certifications, Courses, Talks)</h2>
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Certifications &amp; Courses</h2>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://www.scrumstudy.com/certification/verify?type=SFC&number=945920" >Scrum Fundamentals Certified (SFC).</a></span>
-                         - <span class="project-tagline">Bogotá Colombia, SCRUMstudy - Acreditation Body for Scrum and Agile - 2022</span>
-                    </div><!--//item-->
+                        <span class="project-title"><a target="_blank" href="https://www.scrumstudy.com/certification/verify?type=SFC&number=945920">Scrum Fundamentals Certified (SFC)</a></span>
+                        <span class="project-tagline"> — SCRUMstudy, 2022</span>
+                    </div>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/3e557d47-49c3-4368-8da3-815638a058f6" >Database Administrator</a></span>
-                         - <span class="project-tagline">Bogotá/Colombia - Carlos Slim Fundation 2020</span>
-                    </div><!--//item-->
-                    
+                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/3e557d47-49c3-4368-8da3-815638a058f6">Database Administrator</a></span>
+                        <span class="project-tagline"> — Carlos Slim Foundation, 2020</span>
+                    </div>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/20ed1c4e-3c64-44cc-b007-07fb261cdd4c" >Data curator</a></span>
-                         - <span class="project-tagline">Bogotá/Colombia - Carlos Slim Fundation 2020</span>
-                    </div><!--//item-->                
-                    
-                </section><!--//section-->  
+                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/20ed1c4e-3c64-44cc-b007-07fb261cdd4c">Data Curator</a></span>
+                        <span class="project-tagline"> — Carlos Slim Foundation, 2020</span>
+                    </div>
+                </section>
             </div>
-            
 
             <div class="spanish hidden">
                 <section class="section projects-section">
-                    <h2 class="section-title"><i class="fa fa-archive"></i>Certificaciones, Cursos, Talleres</h2>
-    
+                    <h2 class="section-title"><i class="fa fa-archive"></i>Certificaciones y Cursos</h2>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://www.scrumstudy.com/certification/verify?type=SFC&number=945920" >Scrum Fundamentals Certified (SFC).</a></span>
-                         - <span class="project-tagline">Bogotá Colombia, SCRUMstudy - Cuerpo de acreditación para Scrum and Agile - 2022</span>
-                    </div><!--//item-->
-                    
+                        <span class="project-title"><a target="_blank" href="https://www.scrumstudy.com/certification/verify?type=SFC&number=945920">Scrum Fundamentals Certified (SFC)</a></span>
+                        <span class="project-tagline"> — SCRUMstudy, 2022</span>
+                    </div>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/3e557d47-49c3-4368-8da3-815638a058f6" >Administrador de bases de datos</a></span>
-                         - <span class="project-tagline">Bogotá/Colombia - Fundación Carlos Slim 2020</span>
-                    </div><!--//item-->                
+                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/3e557d47-49c3-4368-8da3-815638a058f6">Administrador de Bases de Datos</a></span>
+                        <span class="project-tagline"> — Fundación Carlos Slim, 2020</span>
+                    </div>
                     <div class="item">
-                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/20ed1c4e-3c64-44cc-b007-07fb261cdd4c" >Curador de datos</a></span>
-                         - <span class="project-tagline">Bogotá/Colombia - Fundación Carlos Slim 2020</span>
-                    </div><!--//item-->
-                    
-                </section><!--//section-->  
+                        <span class="project-title"><a target="_blank" href="https://capacitateparaelempleo.org/verifica/99fe41d0-01aa-49dc-b5f9-0dacdc75b2d4/20ed1c4e-3c64-44cc-b007-07fb261cdd4c">Curador de Datos</a></span>
+                        <span class="project-tagline"> — Fundación Carlos Slim, 2020</span>
+                    </div>
+                </section>
             </div>
-            
 
-
-
-        </div><!--//main-body-->
-    </div>
+        </div><!--//main-wrapper-->
+    </div><!--//wrapper-->
 
     <footer class="footer">
         <div class="text-center">
-            <p>Created by Marco Cubaque - Bogotá Colombia 2025 &copy All Rights Reserved</p>
+            <p>Marco Cubaque — Bogotá, Colombia &copy; 2025</p>
         </div>
-    </footer><!--//footer-->
+    </footer>
 
-    <!-- Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
