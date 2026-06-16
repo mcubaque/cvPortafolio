@@ -1105,6 +1105,14 @@ footer p { margin: 0; }
     height: 260px;
   }
 
+  .rh-pub-wrap {
+    min-height: 260px;
+  }
+
+  .app-visual.rh-pub-mode {
+    align-items: flex-start;
+  }
+
   .featured-content,
   .featured-project.featured-reverse .featured-content {
     border-left: none;
