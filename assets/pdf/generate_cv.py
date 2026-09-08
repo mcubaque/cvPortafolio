@@ -207,11 +207,14 @@ def build_en():
         "development with Python and Flask."
     )
     cv.para(
-        "Currently at AGS Colombia, leading full-stack development of internal enterprise platforms "
-        "- including an AI-powered recruitment system (OpenAI/Groq) and a project management tool "
-        "with Kanban, sprints, and time tracking - combining deep DBA expertise with application "
-        "development. Previous experience includes building PostgreSQL HA clusters with Patroni, "
-        "HAProxy, and Docker at RithmXO (Lindon UT, remote). "
+        "Currently a Senior Professional in Process Automation at Fiduprevisora S.A. (Treasury "
+        "Department, Financial VP), applying server administration, SQL database management, and "
+        "process automation to treasury operations. Previously led AI-powered automation and "
+        "full-stack development at AGS Colombia - including an end-to-end recruitment and "
+        "performance-evaluation system, the HU Tracker project management platform, and n8n "
+        "pipelines syncing government data (REPS, SECOP II) - combining deep DBA expertise with "
+        "application development. Earlier experience includes building PostgreSQL HA clusters with "
+        "Patroni, HAProxy, and Docker at RithmXO (Lindon UT, remote). "
         "Open to relocation and international opportunities."
     )
 
@@ -226,14 +229,34 @@ def build_en():
     cv.section("EXPERIENCE")
 
     cv.job(
-        title="Database Administrator & Software Developer",
-        company="AGS Colombia SAS",
-        date_str="October 2025 - Present",
-        stack="Python, Flask, SQL Server, MySQL, PostgreSQL, Bootstrap 5, OpenAI/Groq API, GLPI API, Chart.js, openpyxl, fpdf2",
+        title="Senior Professional 1 - Process Automation",
+        company="Fiduprevisora S.A. - Treasury Department, Financial VP - Bogota, Colombia (Hybrid)",
+        date_str="August 2026 - Present",
+        stack="",
         bullets=[
-            "Full-stack development of enterprise internal applications for medical audit, HR, and project management.",
-            "Built GestionRH: full-cycle recruitment platform with 7-stage pipeline, AI-powered CV parsing (OpenAI/Groq), candidate compatibility scoring 0-100%, and automated email notifications.",
-            "Built HU Tracker: internal project management tool with Kanban board, sprint planning, time tracking (Clockify-style), task dependency graph (DAG), and GLPI ticketing integration.",
+            "Server administration and SQL Server database management within the Treasury Department, Financial VP.",
+            "Design and implementation of process automations for treasury and financial operations.",
+        ],
+    )
+    cv.job(
+        title="AI Automation Engineer",
+        company="AGS Colombia SAS",
+        date_str="July 2026 - August 2026",
+        stack="Python/Flask, PostgreSQL, MySQL, n8n, LLMs (Groq/OpenAI), Docker, systemd, SMTP, WinRM",
+        bullets=[
+            "Designed and automated the full recruitment and performance evaluation cycle: automatic candidate-vacancy matching via weighted scoring, AI-based resume data extraction, and automated notifications at every stage of the selection pipeline, from application to hiring.",
+            "Built HU Tracker, an in-house platform (Flask + PostgreSQL) for managing user stories, tasks, sprints, and dependencies, with internal automations: status-based owner reassignment, recurring tasks, due-date alerts, AI-generated Daily Standup agendas and PDF meeting minutes, automatic backup monitoring via WinRM across 3 servers, and real-time GLPI integration.",
+            "Designed an n8n workflow that syncs ~61,000 records daily from a government portal (REPS) into MySQL with no duplicates, replacing a manual process and optimized to a stable 64 seconds; plus the SECOP II Monitor pipeline, with daily ingestion via public API, AI-based opportunity classification (Groq/Llama 3.3), and automated email notifications to the sales team.",
+            "Built two multi-client usage audit dashboards (systemd) with Excel and PDF export.",
+        ],
+    )
+    cv.job(
+        title="Database Administrator",
+        company="AGS Colombia SAS",
+        date_str="October 2025 - June 2026",
+        stack="SQL Server, MySQL, PostgreSQL",
+        bullets=[
+            "Management, monitoring, and optimization of SQL Server and PostgreSQL environments, ensuring availability and efficiency.",
             "Designed and optimized relational schemas in SQL Server, MySQL, and PostgreSQL for mission-critical corporate applications.",
             "Collaborated with Technology, HR, and Finance teams in requirements gathering, technical design, and production deployments.",
         ],
@@ -319,12 +342,15 @@ def build_es():
         "de rendimiento y desarrollo backend con Python y Flask."
     )
     cv.para(
-        "Actualmente en AGS Colombia, liderando el desarrollo full-stack de plataformas empresariales "
-        "internas - incluyendo un sistema de reclutamiento con IA (OpenAI/Groq) y una herramienta "
-        "de gestion de proyectos con Kanban, sprints y time tracking - combinando profundidad en DBA "
-        "con desarrollo de aplicaciones. Experiencia previa construyendo clusters PostgreSQL de alta "
-        "disponibilidad con Patroni, HAProxy y Docker en RithmXO (Lindon UT, remoto). "
-        "Disponible para reubicacion y oportunidades internacionales."
+        "Actualmente Profesional Senior de Automatizacion de Procesos en Fiduprevisora S.A. "
+        "(Direccion de Tesoreria, VP Financiera), aplicando administracion de servidores, gestion "
+        "de bases de datos SQL y automatizacion de procesos a operaciones de tesoreria. Previamente "
+        "lidere la automatizacion con IA y el desarrollo full-stack en AGS Colombia - incluyendo un "
+        "sistema integral de reclutamiento y evaluacion de desempeno, la plataforma HU Tracker y "
+        "flujos en n8n para sincronizar datos gubernamentales (REPS, SECOP II) - combinando "
+        "profundidad en DBA con desarrollo de aplicaciones. Experiencia previa construyendo "
+        "clusters PostgreSQL de alta disponibilidad con Patroni, HAProxy y Docker en RithmXO "
+        "(Lindon UT, remoto). Disponible para reubicacion y oportunidades internacionales."
     )
 
     cv.section("HABILIDADES")
@@ -338,14 +364,34 @@ def build_es():
     cv.section("EXPERIENCIA")
 
     cv.job(
-        title="Administrador de BD & Desarrollador de Software",
-        company="AGS Colombia SAS",
-        date_str="Octubre 2025 - Actualidad",
-        stack="Python, Flask, SQL Server, MySQL, PostgreSQL, Bootstrap 5, OpenAI/Groq API, GLPI API, Chart.js, openpyxl, fpdf2",
+        title="Profesional Senior 1 - Automatizacion de Procesos",
+        company="Fiduprevisora S.A. - Direccion de Tesoreria, VP Financiera - Bogota, Colombia (Hibrido)",
+        date_str="Agosto 2026 - Actualidad",
+        stack="",
         bullets=[
-            "Desarrollo full-stack de aplicaciones internas para auditoria medica, gestion humana y gestion de proyectos.",
-            "Desarrolle GestionRH: plataforma con pipeline de 7 etapas, parser de CVs con IA (OpenAI/Groq), score de compatibilidad 0-100% y notificaciones automaticas por email.",
-            "Desarrolle HU Tracker: herramienta con tablero Kanban, sprints, time tracking estilo Clockify, grafo de dependencias (DAG) e integracion GLPI.",
+            "Administracion de servidores y bases de datos SQL Server dentro de la Direccion de Tesoreria, VP Financiera.",
+            "Diseno e implementacion de automatizaciones de procesos para operaciones de tesoreria y finanzas.",
+        ],
+    )
+    cv.job(
+        title="Ingeniero de Automatizacion IA",
+        company="AGS Colombia SAS",
+        date_str="Julio 2026 - Agosto 2026",
+        stack="Python/Flask, PostgreSQL, MySQL, n8n, LLMs (Groq/OpenAI), Docker, systemd, SMTP, WinRM",
+        bullets=[
+            "Disene y automatice el ciclo completo de reclutamiento y evaluacion de desempeno: matching automatico candidato-vacante mediante score ponderado, extraccion de datos de hojas de vida con IA, y notificaciones automaticas en cada etapa del pipeline de seleccion, desde la postulacion hasta la contratacion.",
+            "Construi HU Tracker, una plataforma propia (Flask + PostgreSQL) de gestion de historias de usuario, tareas, sprints y dependencias, con automatizaciones internas: reasignacion de responsables por estado, tareas recurrentes, alertas de vencimiento, generacion con IA de agendas de Daily Standup y actas en PDF, monitoreo automatico de respaldos via WinRM en 3 servidores, e integracion en tiempo real con GLPI.",
+            "Disene un flujo en n8n que sincroniza diariamente ~61.000 registros desde un portal gubernamental (REPS) hacia MySQL sin duplicados, reemplazando un proceso manual y optimizado a 64 segundos estables; ademas del pipeline Monitor SECOP II, con ingesta diaria via API publica, clasificacion de oportunidades con IA (Groq/Llama 3.3) y notificacion automatica por correo al equipo comercial.",
+            "Desarrolle dos dashboards de auditoria de uso multi-cliente (systemd) con exportacion a Excel y PDF.",
+        ],
+    )
+    cv.job(
+        title="Administrador de Bases de Datos",
+        company="AGS Colombia SAS",
+        date_str="Octubre 2025 - Junio 2026",
+        stack="SQL Server, MySQL, PostgreSQL",
+        bullets=[
+            "Gestion, monitoreo y optimizacion de entornos SQL Server y PostgreSQL, garantizando su disponibilidad y eficiencia.",
             "Disene y optimice esquemas relacionales en SQL Server, MySQL y PostgreSQL para aplicaciones de mision critica.",
             "Colabore con equipos de Tecnologia, RRHH y Finanzas en levantamiento de requerimientos y puesta en produccion.",
         ],
