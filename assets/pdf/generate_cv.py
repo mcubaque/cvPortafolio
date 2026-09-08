@@ -94,17 +94,17 @@ class CV(FPDF):
         self.set_y(max(y_after_lbl, y_after_val))
 
     # ── Bullet line ─────────────────────────────────────────────────────────
-    def bullet(self, text, indent=5, size=9.5):
-        self._space_check(LH)          # guard: dash cell won't trigger page break
+    def bullet(self, text, indent=5, size=9.5, bh=4.2):
+        self._space_check(bh)          # guard: dash cell won't trigger page break
         w_dash = 4
         w_text = self.BW - indent - w_dash
         y = self.get_y()
 
         self._f("", size);  self._c(C_TEXT)
         self.set_xy(self.l_margin + indent, y)
-        self.cell(w_dash, LH, "-")
+        self.cell(w_dash, bh, "-")
         self.set_xy(self.l_margin + indent + w_dash, y)
-        self.multi_cell(w_text, LH, text)
+        self.multi_cell(w_text, bh, text)
 
     # ── Job entry ───────────────────────────────────────────────────────────
     def job(self, title, company, date_str, stack, bullets):
@@ -130,11 +130,11 @@ class CV(FPDF):
             self._f("", 8);  self._c(C_MUTED)
             self._goto()
             self.multi_cell(self.BW, 4, "Stack: " + stack)
-        self._nl(1.5)
+        self._nl(1)
 
         for b in bullets:
             self.bullet(b)
-        self._nl(2)
+        self._nl(1.2)
 
     # ── Education entry ─────────────────────────────────────────────────────
     def edu(self, degree, institution, years):
