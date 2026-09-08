@@ -312,7 +312,6 @@ def build_en():
     cv.cert("Data Curator",                       "Carlos Slim Foundation  |  2020")
 
     cv.section("LANGUAGES")
-    cv.two_col("Spanish:", "Native")
     cv.two_col("English:", "Intermediate (B1)")
 
     out = os.path.join(OUT_DIR, "MarcoResumeEng.pdf")
@@ -447,7 +446,6 @@ def build_es():
     cv.cert("Curador de Datos",                   "Fundacion Carlos Slim  |  2020")
 
     cv.section("IDIOMAS")
-    cv.two_col("Espanol:", "Nativo")
     cv.two_col("Ingles:",  "Intermedio (B1)")
 
     out = os.path.join(OUT_DIR, "MarcoResume.pdf")
